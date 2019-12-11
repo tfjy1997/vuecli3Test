@@ -7,17 +7,22 @@
       <div class="top">
         <img src="img/title.jpg" alt="">
       </div>
-      <div class="buttom"></div>
+      <div class="buttom">
+        <right-menu></right-menu>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import LeftNav from '../components/LeftNav'
+import RightMenu from '../components/RightMenu'
+
 export default {
   name: 'Main',
   components: {
-    LeftNav
+    LeftNav,
+    RightMenu
   }
 }
 </script>
@@ -52,6 +57,5 @@ export default {
 
   .left,.right {
     background: #f5f5f5;
-    height: 500px;
   }
 </style>
