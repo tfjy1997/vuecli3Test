@@ -52,5 +52,6 @@ export default {
     margin-bottom: 2px;
     background-color: white;
     line-height: 50px;
+    cursor: pointer;
   }
 </style>

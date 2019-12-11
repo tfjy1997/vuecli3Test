@@ -1,6 +1,17 @@
 <template>
   <div class="right-menu">
-    =={{ kk }}==
+    <div v-if="kk==1">
+      1111111111111111111111
+    </div>
+     <div v-if="kk==2">
+      2222222222222222222222
+    </div>
+    <div v-if="kk==3">
+      3333333333333333333333
+    </div>
+    <div v-if="kk==4">
+      4444444444444444444444
+    </div>
   </div>
 </template>
 
