@@ -2,12 +2,13 @@
   <div class="left-nav">
     <div class="title">热门推荐</div>
     <ul class="menu">
-      <li v-for="(item, index) in menu" :key="index">{{ item }}</li>
+      <li v-for="(item, index) in menu" :key="index" @click="getMenu(index)">{{ item }}</li>
     </ul>
   </div>
 </template>
 
 <script>
+import Msg from './msg.js'
 export default {
   name: 'LeftNav',
   data() {
@@ -27,6 +28,11 @@ export default {
       ]
     }
   },
+  methods: {
+    getMenu (index) {
+      Msg.$emit("val", index)
+    }
+  }
 }
 </script>
 

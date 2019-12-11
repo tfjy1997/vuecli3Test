@@ -1,3 +1,3 @@
 // 事件总线
 import Vue from 'vue'
-export default nen Vue
+export default new Vue
