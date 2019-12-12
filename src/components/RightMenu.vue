@@ -1,10 +1,10 @@
 <template>
   <div class="right-menu">
     <div v-if="kk==0">
-      <good-list></good-list>
+      <good-list :goodId="0"></good-list>
     </div>
      <div v-if="kk==1">
-      2222222222222222222222
+      <good-list :goodId="1"></good-list>
     </div>
     <div v-if="kk==2">
       3333333333333333333333
